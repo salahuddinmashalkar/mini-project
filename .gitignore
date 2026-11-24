@@ -1,0 +1,75 @@
+# ==========================================
+# AeroCast - Git Ignore Rules
+# ==========================================
+
+# Sensitive Environment & Credentials
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# Vaadin Frontend Generated Artifacts
+src/main/frontend/generated/
+vite.generated.ts
+
+# Maven Target & Build Outputs
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.war
+*.ear
+*.jar
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Embedded H2 Database Storage
+data/
+*.mv.db
+*.trace.db
+
+# Log Files
+*.log
+logs/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse IDE
+.settings/
+.project
+.classpath
+.factorypath
+bin/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# OS / Temporary Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Vaadin Frontend Build Artifacts
+node_modules/
+package-lock.json
+package.json
+pnpm-lock.yaml
+pnpmfile.js
+vite.generated.ts
+types.d.ts
+frontend/generated/
+.pnpm-store/
