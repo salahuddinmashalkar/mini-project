@@ -21,6 +21,9 @@ import java.util.List;
 public class AeroCastApplication implements AppShellConfigurator {
 
     public static void main(String[] args) {
+        try {
+            Files.createDirectories(Path.of("./data"));
+        } catch (Exception ignored) {}
         loadDotEnv();
         SpringApplication.run(AeroCastApplication.class, args);
     }
